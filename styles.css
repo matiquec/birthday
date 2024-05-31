@@ -1,0 +1,95 @@
+body {
+    background-image: url('JNVS.gif');
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; /* Elimina el margen por defecto del body */
+    padding-top: 10%; /* Añade un pequeño padding en la parte superior para evitar que el contenido se corte */
+    padding-bottom: 10%; /* Añade un pequeño padding en la parte superior para evitar que el contenido se corte */
+    background-color: #f0f0f028;
+    transition: background-color 1s;
+}
+.content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.381); /* Sombra sutil */
+    text-align: center;
+}
+h1 {
+    font-size: 2rem;
+    color: #ffffff;
+}
+p {
+    font-size: 1.2rem;
+    color: #faf9f9;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Estilos para diferentes tamaños de pantalla */
+@media (max-width: 1200px) {
+    .content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .content {
+        max-width: 100%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content {
+        padding: 10px;
+    }
+}
+
+/* Estilos adicionales para el texto */
+#day-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+#day-text {
+    font-size: 1.2em;
+}
+
+#letra-pequeña{
+    font-size: 0.8em;
+    text-align: right;
+}
+
+/* Estilos para el botón */
+#show-content-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: #6200ea; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#show-content-btn:hover {
+    background-color: #3700b3; /* Color de fondo al pasar el mouse */
+    transform: translateY(-2px); /* Mueve el botón hacia arriba al pasar el mouse */
+}
+
+#show-content-btn:active {
+    background-color: #1a00a5; /* Color de fondo al hacer clic */
+    transform: translateY(0); /* Restaura la posición del botón */
+}
