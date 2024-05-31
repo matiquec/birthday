@@ -84,8 +84,13 @@ if(month + 1 ===6){
     endText.textContent = "Vuelve mañana";
     document.getElementById("canvas").style.backgroundColor = hexToRgba(todayColor,alpha);
 }else{
-    dayTitle.innerHTML = "Feliz Cumpleaños Adri!!";
-    dayText.innerHTML = daysOfMonth.map(objeto => objeto.text).join("<br>");;
-    endText.innerHTML = "Gracias por todo <br> Algún día lo mejoraré y tal vez le ponga sonido";
-    document.getElementById("canvas").style.backgroundColor = hexToRgba(todayColor,alpha);
+    if(month + 1 ===5){
+        endText.innerHTML = "Vuelve mañana";
+        document.getElementById("canvas").style.backgroundColor = hexToRgba(todayColor,alpha);
+    }else{
+        dayTitle.innerHTML = "Feliz Cumpleaños Adri!!";
+        dayText.innerHTML = daysOfMonth.map(objeto => objeto.text).join("<br>");;
+        endText.innerHTML = "Gracias por todo Adri<br>Algún día lo mejoraré y tal vez le ponga sonido";
+        document.getElementById("canvas").style.backgroundColor = hexToRgba(todayColor,alpha);
+    }
 }
