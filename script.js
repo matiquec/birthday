@@ -90,7 +90,7 @@ if(month + 1 ===6){
     }else{
         dayTitle.innerHTML = "Feliz Cumpleaños Adri!!";
         dayText.innerHTML = daysOfMonth.map(objeto => objeto.text).join("<br>");;
-        endText.innerHTML = "Gracias por todo Adri<br>Algún día lo mejoraré y tal vez le ponga sonido";
+        endText.innerHTML = "Gracias por todo Adri<br>Espero le des el uso adecuado";
         document.getElementById("canvas").style.backgroundColor = hexToRgba(todayColor,alpha);
     }
 }
